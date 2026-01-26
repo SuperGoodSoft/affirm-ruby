@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.license = "Apache License Version 2.0"
   s.author = "Reverb.com"
   s.email = "dev@reverb.com"
-  s.has_rdoc = false
   s.files = Dir.glob ["README.md", "lib/**/*.{rb}", "spec/**/*", "*.gemspec"]
 
   if s.respond_to?(:metadata)
