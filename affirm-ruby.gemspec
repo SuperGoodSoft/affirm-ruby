@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "affirm"
+  s.name = "affirm-ruby"
   s.summary = "Affirm Ruby Client Library"
   s.description = "Ruby client library for integrating with Affirm financing payments"
   s.version = "1.1.3"
