@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.description = "Ruby client library for integrating with Affirm financing payments"
   s.version = "1.1.3"
   s.license = "Apache License Version 2.0"
+  s.require_paths = ["lib"]
   s.author = "Reverb.com"
   s.email = "dev@reverb.com"
   s.files = Dir.glob ["README.md", "lib/**/*.{rb}", "spec/**/*", "*.gemspec"]
