@@ -4,7 +4,7 @@ require 'affirm'
 
 include WebMock::API
 
-TEST_URL = "https://public_key:secret_key@test.affirm.com"
+TEST_URL = "https://test.affirm.com"
 
 RSpec.configure do |config|
   config.before(:suite) do

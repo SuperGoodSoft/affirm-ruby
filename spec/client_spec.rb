@@ -8,7 +8,7 @@ describe Affirm::Client do
 
   let(:request) { double("request", run: response) }
   let(:response) { double("response", success?: true, body: "", code: 200) }
-  let(:affirm_url) { "https://public_key:secret_key@testaffirm.com/testpath" }
+  let(:affirm_url) { "https://testaffirm.com/testpath" }
 
   describe "make_request" do
     before do

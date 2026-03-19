@@ -102,7 +102,7 @@ describe Affirm::Charge do
 
     it "optionally allows tracking params" do
       params = { order_id: "order_id", shipping_carrier: "carrier", shipping_confirmation: "confirmation" }
-      charge.capture(params)
+      charge.capture(**params)
 
       expect(WebMock).to have_requested(request_method, request_url).with(body: params.to_json)
     end
@@ -236,7 +236,7 @@ describe Affirm::Charge do
 
     it "optionally allows params" do
       params = { order_id: "order_id", shipping_carrier: "carrier", shipping_confirmation: "confirmation" }
-      charge.update(params)
+      charge.update(**params)
 
       expect(WebMock).to have_requested(request_method, request_url).with(body: params.to_json)
     end
@@ -266,7 +266,7 @@ describe Affirm::Charge do
 
     let(:request_method) { :get }
     let(:response_body) { load_fixture("charges/retrieve.json") }
-    let(:request_url) { /.*other_public:other_secret.*/ }
+    let(:request_url) { "#{TEST_URL}/charges/#{id}" }
 
     it "uses the client's creds" do
       Affirm::Charge.retrieve(id, client: client)

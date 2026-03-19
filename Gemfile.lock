@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    affirm (1.1.3)
+    affirm-ruby (1.1.3)
       typhoeus
 
 GEM
@@ -59,7 +59,6 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -67,7 +66,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  affirm!
+  affirm-ruby!
   bundler
   rake
   rspec
@@ -75,7 +74,7 @@ DEPENDENCIES
 
 CHECKSUMS
   addressable (2.8.9) sha256=cc154fcbe689711808a43601dee7b980238ce54368d23e127421753e46895485
-  affirm (1.1.3)
+  affirm-ruby (1.1.3)
   bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
   crack (1.0.1) sha256=ff4a10390cd31d66440b7524eb1841874db86201d5b70032028553130b6d4c7e
   diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
